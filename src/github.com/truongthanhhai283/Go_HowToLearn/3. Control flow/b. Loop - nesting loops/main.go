@@ -4,7 +4,6 @@ import "fmt"
 
 func main() {
 	for i := 0; i <= 10; i++ {
-		fmt.Println("loop ", i)
 		for j := 1; j <= 3; j++ {
 			fmt.Println("loop ", j)
 		}
