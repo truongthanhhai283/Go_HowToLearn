@@ -12,7 +12,7 @@ func main() {
 	x["todd"] = 33
 
 	if _, ok := x["todd"]; ok {
-		delete(x, "lisa") 
+		delete(x, "lisa")
 		fmt.Println(x)
 	}else {
 		fmt.Println(false)
