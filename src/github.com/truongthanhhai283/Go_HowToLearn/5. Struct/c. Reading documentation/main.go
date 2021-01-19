@@ -14,6 +14,12 @@ type secretAgent struct {
 	ltk bool
 }
 
+type foo int
+
+var b foo
+
+const h = 1000
+
 func main() {
 	x, y = 4, 5
 
@@ -25,7 +31,9 @@ func main() {
 		ltk: false,
 	}
 
-	fmt.Println(x, y)
+	b=h
 
 	fmt.Println(z)
+	
+	fmt.Printf("%T\n", b)
 }
