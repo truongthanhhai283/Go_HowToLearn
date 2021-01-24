@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 var a int
+
 func main() {
 	s := []int{2, 1, 5, 135, 5, 12, 56, 1234, 6}
 	y := sum(s...)
@@ -21,7 +22,7 @@ func sum(x ...int) int {
 }
 
 func even(f func(xi ...int) int, vi ...int) int {
-	yi := []int{}
+	var yi []int
 	for _, v := range vi {
 		if v%2 == 0 {
 			yi = append(yi, v)
@@ -29,4 +30,3 @@ func even(f func(xi ...int) int, vi ...int) int {
 	}
 	return f(yi...)
 }
-
